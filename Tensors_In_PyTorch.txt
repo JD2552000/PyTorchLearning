@@ -1,0 +1,49 @@
+"""Tensors are very useful and basics of PyTorch and somewhat similar to Numpy.
+
+Tensors are data structure and they are multi-dimensional array used for mathematical and computational efficiency.
+This means whatever array does in 1D, Pytorch does in high(n) dimensions.
+Tha main thing in tensors is dimension and dimension in tensors means in how many direction the tensors is spanned.
+1D Tensor means it is spanned in 1 direction Likewise for n dimension it is spanned in n directions.
+
+OD means it is not spanned in any direction and that means it is scalar.For example 2, 45, 0.5 like numbers
+The main example of OD or scalar is in neural network when we do forward pass after prdiction when we calculate loss function to find the difference between
+actual and predicted value the loss value we get from loss function is always scalar
+
+1D tensor means it is spanned in one direction.Example is vector or an array.In deep learning, mainly NLP
+each word when passed into Neural Nets like Word2Vec, the output we get are the embedding vector representing
+the input word which we passed into neural network.
+
+2D tensor means it is spanned in two directions. The main example is grayscale images where each pixel corresponds
+to number means its intensity. Matrix is an example.
+
+3D Tensor means it is spanned in three directions and the third dimension is often used for stacking data.
+The example of this tensor can be considered as RGB images as it has 3 channel 256 x 256 x 3 shape.
+
+4D Tensor spans in fours directions and example of it are batches of RGB images that we send in neural network.For example we are sending 32 RGB images in neural
+network so this can be a 4D tensor. How? --> [batch-size, width, height, channels] that is [32, 128, 128, 3]
+
+5D tensor means this tensor spans across five directions and the best example is Video. Video contains frames of images and these images are RGB images. How ?-->
+[batch-size, frames/images, width, height, channel] -> [10, 16, 64, 64, 3] meaning 10 videos, each video contains 16 frames/images and each of the images are RGB image.
+"""
+
+"""WHY ARE TENSORS USEFUL
+1) Mathematical Operations:- Tensors enable efficient mathematical computations like matrix addition, multiplication, dot product which are necessary for neural network
+operations and the main thing is these operation can be paralled computed on GPU as GPU have multi-core the speed of completion of the operations is very fast.
+
+2) Representation of Real-World Data:- Data like images, audio, video and text can be easily represented in form aof tensor hence complex computations on images
+can be performed at great speed.For example images can be represented as 3D tensors and text/word can be represented as 1D tensor.
+
+3) Efficient Computations:- Tensors are optimized for hardware acceleration, allowing computations on GPUs or TPUs which are crucial for training deep learning models"""
+
+"""WHY ARE TENSORS USED IN DEEP LEARNING
+1) Data Storage:- To train any model in deep learning we need trainable data and that data can be of different types i.e. images, audio, video text etc and these data can be store
+and represented in tensors.
+
+2)Weights and Biases:- Any deep learning model has weights and biases associated with it and these can be stored in form of tensors.
+
+3)Matrix Operations:- Neural Networks has forwards and backpropagation to train learnable parameters and train the model too and these requires matrix multiplication
+of large matrices, dot product, broadcasting and these all can be easily performed and in speed through tensors.
+
+4) Training Process:- During Forward process in neural network, tensors flows through the network and the main important thing is the gradients
+are represented as tensors during backpropagation.
+"""
