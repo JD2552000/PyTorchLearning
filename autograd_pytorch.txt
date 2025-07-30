@@ -1,0 +1,13 @@
+"""Autograd is PyTorch automatic differentiation tool and we can calculate derivates easy when training during neural networks.
+Because when the function/nexted function goes on becoming complex, then it becomes difficult to calculate and code its derivates.
+In neural networks, there are many layers withe complex functions and finding gradients during backpropagation becomes very difficult.
+So, we need some tool to calculate gradients automatically, which autograd will help us do."""
+
+"""Now the nested functions and its derivate is very closely related to deep learning because during prediction time in neural network, generally what we do is y = wx+b and
+then apply sigmoid or any activation function on y that is z = sigmoid(y) and then we calculate loss function on basis of z the prediction and actual values.
+So from here we can generally figure it out that the loss is indirectly dependent on w and b which is basically a chain rule.
+SO the whole neural network is basically a complex nested function of which we need to calculate the gradients during backpropagation."""
+
+"""In backpropagation, we generally need to calculate gradients of loss with respect to parameters that is weights and biases"""
+
+"""Clearing Gradients"""
