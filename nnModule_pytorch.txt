@@ -1,0 +1,16 @@
+"""Previously, we manually wrote the code for the neural network that is the weights anf biases,
+the connection between the layers(forward pass), activation functions and also we are manually updating
+the paramteres after backpropagation, but the main thing is its
+all included under nn.Module class in Pytorch and we will also use the optim class for using the 
+deep learning optimizers to update the weights and biases and get the more desired output.
+
+We can build multiple layers and put them into a container/sequential manner using nn.Sequential."""
+
+"""The torch.nn module in PyTorch is a core library that provides a wide array of classes and functions
+designed to help build developers build neural networks efficiently and effectively. It abstracts the complexity
+of creating and training neural networks by offering pre-built layers, loss functions, activation functions and
+other utilities, enabling you to focus on designing and experimenting with model architectures."""
+
+Key Components of torch.nn:
+1) Modules(Layers):
+nn.Module: The base class for all neural networks modules.Your custom models and layers should subclass this class.

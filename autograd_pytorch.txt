@@ -10,4 +10,5 @@ SO the whole neural network is basically a complex nested function of which we n
 
 """In backpropagation, we generally need to calculate gradients of loss with respect to parameters that is weights and biases"""
 
-"""Clearing Gradients"""
+"""Clearing Gradients: As Gradient keep on accumulating which is a major problem during training because then the model will not provide the approriate result.
+So Clearing the gradients before each iteration of backpropagation is necessary"""
